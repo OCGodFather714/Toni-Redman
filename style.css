@@ -1,0 +1,32 @@
+/*
+ Theme Name: Toni Brand Theme (Child)
+ Template: twentytwentyfour
+ Version: 1.0.0
+ Description: Luxe gold/white/black child theme for Toni (elegant, high-conversion).
+ Author: Stephen D. Farrar II
+ Text Domain: toni-brand
+*/
+
+.site-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(10,10,10,.74); }
+
+/* Buttons */
+.wp-element-button,.wp-block-button__link{
+  transition:transform .18s ease,box-shadow .18s ease,background .2s ease
+}
+.wp-element-button:hover,.wp-block-button__link:hover{
+  background: linear-gradient(145deg,#D4AF37,#F2D46C);
+  box-shadow:0 10px 24px rgba(212,175,55,.35);
+  transform:translateY(-1px)
+}
+
+/* Cards */
+.card{background:#111;border-radius:16px;padding:28px;border:1px solid #2a2a2a}
+
+/* Fancy link underline */
+a:not(.wp-block-button__link){
+  text-decoration:none;
+  background-image:linear-gradient(#D4AF37,#D4AF37);
+  background-size:0% 2px;background-repeat:no-repeat;background-position:0 100%;
+  transition:background-size .2s ease
+}
+a:not(.wp-block-button__link):hover{background-size:100% 2px}
